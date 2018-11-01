@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# 1/ script vs command
+# 2/ comments
+# 3/ 
+echo "J'aime la terrine
+J'aime le cochon" | \
+\
+sed 's/aime/adore/g # replace aime
+s/le cochon/les cornichons/ # replace cochon'
+

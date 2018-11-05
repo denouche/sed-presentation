@@ -9,5 +9,5 @@ echo "1234.jpg
 2345.jpg
 3456.jpg" | \
 \
-sed -r 's/[0-9]+\.jpg/xxxxx/g'
-
+sed -r 's@([0-9]+)\.jpg@"\1";"http://\1.jpg"@g'
+# s|toMatch|toReplace|

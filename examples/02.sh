@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# 1/ GNU vs MacOS
+# 1/ simple substitute
+# 2/ script vs command
+# 3/ comments
 
-sed --version
-
-# On MacOS:
- # brew install gnu-sed
- # gsed
-# Or
- # brew install gnu-sed --with-default-names
- # sed
+echo "J'aime la terrine
+J'aime le cochon" | \
+\
+sed ''
 

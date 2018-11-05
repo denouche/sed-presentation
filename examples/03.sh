@@ -1,18 +1,13 @@
 #!/bin/bash
 
-# 1/ Conditions on line numbers
-# 2/ Conditions on patterns
-# 3/ Negation
-# 4/ Blocs
+# 1/ GNU vs MacOS
 
-echo "1
-2 foo
-3
-4 foo
-5" | \
-\
-sed '/foo/{
-    # delete lines containing foo
-    d
-}'
+sed --version
+
+# On MacOS:
+ # brew install gnu-sed
+ # gsed
+# Or
+ # brew install gnu-sed --with-default-names
+ # sed
 

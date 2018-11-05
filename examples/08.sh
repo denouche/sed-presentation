@@ -14,7 +14,5 @@ echo "1
 3
 4" | \
 \
-sed -n '1!G # if not first line, append
-h # copy
-$p'
+sed ''
 

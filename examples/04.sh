@@ -7,7 +7,7 @@
 
 echo "1
 2 foo
-3
+3 #Movember
 4 foo
 5" | \
 \

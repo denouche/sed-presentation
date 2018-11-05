@@ -5,6 +5,7 @@
 # 3/ comments
 
 echo "J'aime la terrine
+J'aime #Movember
 J'aime le cochon" | \
 \
 sed ''

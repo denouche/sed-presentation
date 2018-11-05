@@ -4,6 +4,7 @@
 # 2/ comments
 # 3/ 
 echo "J'aime la terrine
+J'aime #Movember
 J'aime le cochon" | \
 \
 sed 's/aime/adore/g # replace aime

@@ -8,7 +8,6 @@ echo "1
 2" | \
 \
 sed -r '
-N
 s/\n/,/g # replace \n by ,
 '
 

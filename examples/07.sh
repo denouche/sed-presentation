@@ -11,11 +11,7 @@ echo "1
 5" | \
 \
 sed -r '
-:ici
 N   # append next line to pattern space
-${
-    s/\n/,/g # replace \n by ,
-}
-b ici
+s/\n/,/g # replace \n by ,
 '
 

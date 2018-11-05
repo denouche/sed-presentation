@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # 1/ Multiple lines
-# eog ../sed_processing.png
-
 
 echo "1
 2" | \
@@ -10,4 +8,6 @@ echo "1
 sed -r '
 s/\n/,/g # replace \n by ,
 '
+
+# eog sed_processing.png
 

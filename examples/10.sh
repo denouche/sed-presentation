@@ -1,9 +1,6 @@
 #!/bin/bash
-
 # 1/ Bonus track
-
 # compress each block on one line, and remove comments
-
 echo "
 #header-title {
     font-size: 35px;
@@ -23,7 +20,8 @@ echo "
 " | \
 \
 sed -r '
-/\{/{ # start new block
+/^$/d # delete empty lines
+/\{/{ # a new block starts
 	:ici
 	N     # append next line to pattern space
 	/\}/{ # end of block
@@ -34,6 +32,5 @@ sed -r '
 :end
 s|/\*.*\*/||g # remove comments
 s/\n */ /g    # remove \n and spaces at the begining of each lines
-/^$/d         # delete empty lines
 '
 

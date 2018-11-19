@@ -7,7 +7,7 @@
 # G   # Append hold space to pattern space
 # x   # Exchange the contents of the hold and pattern spaces
 
-# eog ../reverse_file/01.png
+# eog reverse_file/01.png
 
 echo "1
 2
